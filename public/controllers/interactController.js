@@ -1,4 +1,3 @@
-HTML CSS JS
 // target elements with the "draggable" class
 interact('.draggable')
   .draggable({
