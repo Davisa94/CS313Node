@@ -1,5 +1,5 @@
-const interact = require('interactjs');
-// import {interact} from 'interact.js'
+// const interact = require('interactjs');
+import {interact} from 'interact.js';
 
   // target elements with the "draggable" class
   interact('.draggable')
