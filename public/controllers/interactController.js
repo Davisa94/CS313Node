@@ -40,7 +40,7 @@
 
         target.style.background = 'green';
         console.log(target.id);
-        console.log(document.getElementById(target.id).style.CSSStyleDeclaration.zIndex)
+        console.log(document.getElementById(target.id).style.zIndex="1")
         target.style.zIndex = maxZ + 1;
         console.log(event.target.style.zIndex);
       // var top = 0;
