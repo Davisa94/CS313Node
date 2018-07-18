@@ -73,7 +73,7 @@
       // target.style.position = "relative";
 
 
-      // target.style.position = 'absolute';
+      target.style.position = 'fixed';
 
 
     }
