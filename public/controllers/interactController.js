@@ -30,7 +30,16 @@
     });
 
     function dragMoveListener (event) {
-
+      var target = event.target;
+      var maxZ = Math.max.apply(null,
+      $.map($('body > *'), function(e,n) {
+        if ($(e).css('position') != 'static')
+          return parseInt($(e).css('z-index')) || 1;
+      }));
+        target.style.background = 'green';
+        console.log(parseInt($(e).css(event.target.style.zIndex)));
+        target.style.zIndex = maxZ + 1;
+        console.log(event.target.style.zIndex);
       // var top = 0;
       // for(var node of event.target.parentNode.childNodes)
       // {
@@ -39,7 +48,7 @@
       //     }
       // }
       // top += 1;
-      var target = event.target;
+
       target = target.parentNode.appendChild(target);
           // keep the dragged position in the data-x/data-y attributes
           x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
@@ -49,15 +58,7 @@
 
 
       // translate the element
-      // var maxZ = Math.max.apply(null,
-      // $.map($('body > *'), function(e,n) {
-      //   if ($(e).css('position') != 'static')
-      //     return parseInt($(e).css('z-index')) || 1;
-      // }));
-      //   target.style.background = 'green';
-      //   console.log(parseInt($(e).css(event.target.style.zIndex)));
-      //   target.style.zIndex = maxZ + 1;
-      //   console.log(event.target.style.zIndex);
+
 
 
       target.style.webkitTransform =
