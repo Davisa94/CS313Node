@@ -44,6 +44,15 @@
           y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
 
       // translate the element
+      var maxZ = Math.max.apply(null,
+      $.map($('body > *'), function(e,n) {
+        if ($(e).css('position') != 'static')
+          return parseInt($(e).css('z-index')) || 1;
+      }));
+
+        target.style.background = 'green';
+        target.style.zIndex = maxZ + 1;
+        target.style.position = 'relative';
       target.style.webkitTransform =
       target.style.transform =
         'translate(' + x + 'px, ' + y + 'px)';
@@ -54,7 +63,6 @@
 
       //Put on top:
       // target.style.position = "relative";
-      target.style.zIndex = target.style.zIndex + 1;
 
     }
 
