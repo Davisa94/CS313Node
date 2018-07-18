@@ -57,7 +57,7 @@
 
       target.style.webkitTransform =
       target.style.transform =
-        'translate(' + x + 'px, ' + y + 'px)';
+        'translate(' + x + 'px, ' + y + 'py)';
 
       // update the posiion attributes
       target.setAttribute('data-x', x);
