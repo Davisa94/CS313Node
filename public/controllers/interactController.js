@@ -50,7 +50,7 @@
           return parseInt($(e).css('z-index')) || 1;
       }));
         target.style.background = 'green';
-        console.log(event.target.style.zIndex);
+        console.log(parseInt($(e).css(event.target.style.zIndex)));
         target.style.zIndex = maxZ + 1;
         console.log(event.target.style.zIndex);
         target.style.position = 'relative';
