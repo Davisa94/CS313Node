@@ -54,6 +54,7 @@
 
       //Put on top:
       target.style.position = "relative";
+      target.style.zIndex = target.style.zIndex + 1;
 
     }
 
