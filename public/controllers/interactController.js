@@ -38,7 +38,7 @@
           return parseInt($(e).css('z-index')) || 1;
       }));
         target.style.background = 'green';
-        console.log(target);
+        console.log(target.id);
         target.style.zIndex = maxZ + 1;
         console.log(event.target.style.zIndex);
       // var top = 0;
