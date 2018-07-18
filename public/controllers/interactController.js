@@ -44,16 +44,17 @@
           y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
 
       // translate the element
-      var maxZ = Math.max.apply(null,
-      $.map($('body > *'), function(e,n) {
-        if ($(e).css('position') != 'static')
-          return parseInt($(e).css('z-index')) || 1;
-      }));
-        target.style.background = 'green';
-        console.log(parseInt($(e).css(event.target.style.zIndex)));
-        target.style.zIndex = maxZ + 1;
-        console.log(event.target.style.zIndex);
-        target.style.position = 'relative';
+      // var maxZ = Math.max.apply(null,
+      // $.map($('body > *'), function(e,n) {
+      //   if ($(e).css('position') != 'static')
+      //     return parseInt($(e).css('z-index')) || 1;
+      // }));
+      //   target.style.background = 'green';
+      //   console.log(parseInt($(e).css(event.target.style.zIndex)));
+      //   target.style.zIndex = maxZ + 1;
+      //   console.log(event.target.style.zIndex);
+        target.style.position = 'absolute';
+        target.parentNode.appendChild(target);
       target.style.webkitTransform =
       target.style.transform =
         'translate(' + x + 'px, ' + y + 'px)';
