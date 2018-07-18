@@ -39,7 +39,9 @@
       //     }
       // }
       // top += 1;
-      var target = event.target,
+      var target = event.target;
+      target.parentNode.appendChild(target);
+      target = event.target,
           // keep the dragged position in the data-x/data-y attributes
           x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
           y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
@@ -70,7 +72,7 @@
       //Put on top:
       // target.style.position = "relative";
 
-      target.parentNode.appendChild(target);
+
       // target.style.position = 'absolute';
 
 
