@@ -30,6 +30,7 @@
     });
 
     function dragMoveListener (event) {
+      var amount = 1
       var target = event.target;
       target.style.position = "relative";
       var maxZ = Math.max.apply(null,
@@ -40,7 +41,7 @@
 
         target.style.background = 'green';
         console.log(target.id);
-        console.log(document.getElementById(target.id).style.zIndex="1")
+        console.log(document.getElementById(target.id).style.zIndex="1" + amount);
         target.style.zIndex = maxZ + 1;
         console.log(event.target.style.zIndex);
       // var top = 0;
