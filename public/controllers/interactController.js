@@ -46,7 +46,7 @@
       target.setAttribute('data-y', y);
 
       //Put on top:
-      event.target.style.zIndex += "1";
+      target.style.zIndex += "1";
 
     }
 
