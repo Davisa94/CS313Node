@@ -53,8 +53,7 @@
       //   console.log(parseInt($(e).css(event.target.style.zIndex)));
       //   target.style.zIndex = maxZ + 1;
       //   console.log(event.target.style.zIndex);
-        target.style.position = 'absolute';
-        target.parentNode.appendChild(target);
+
 
       target.style.webkitTransform =
       target.style.transform =
@@ -67,6 +66,8 @@
       //Put on top:
       // target.style.position = "relative";
       // target.style.position = 'relative';
+      target.style.position = 'absolute';
+      target.parentNode.appendChild(target);
     }
 
     // this is used later in the resizing and gesture demos
