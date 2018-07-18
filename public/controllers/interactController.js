@@ -42,7 +42,7 @@
           // keep the dragged position in the data-x/data-y attributes
           x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
           y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
-          
+
           target.style.position = 'absolute';
 
           target.parentNode.appendChild(target);
@@ -70,7 +70,7 @@
 
       //Put on top:
       // target.style.position = "relative";
-      // target.style.position = 'relative';
+      target.style.position = 'relative';
 
 
     }
