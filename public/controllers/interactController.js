@@ -31,7 +31,7 @@
 
     function dragMoveListener (event) {
       var top = 0;
-      for(node in event.target.parentNode)
+      for(node in event.target.parentNode.childNodes)
       {
           if(node.style.zIndex >= top){
             top = node.style.zIndex;
