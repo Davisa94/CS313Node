@@ -30,6 +30,8 @@
     });
 
     function dragMoveListener (event) {
+      event.target.style.position = 'absolute';
+      event.target.parentNode.appendChild(target);
       // var top = 0;
       // for(var node of event.target.parentNode.childNodes)
       // {
@@ -43,9 +45,7 @@
           x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
           y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
 
-          target.style.position = 'absolute';
 
-          target.parentNode.appendChild(target);
 
 
       // translate the element
