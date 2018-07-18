@@ -30,8 +30,7 @@
     });
 
     function dragMoveListener (event) {
-      event.target.style.position = 'absolute';
-      event.target.parentNode.appendChild(target);
+
       // var top = 0;
       // for(var node of event.target.parentNode.childNodes)
       // {
@@ -70,7 +69,8 @@
 
       //Put on top:
       // target.style.position = "relative";
-      target.style.position = 'relative';
+      // event.target.style.position = 'absolute';
+      event.target.parentNode.appendChild(target);
 
 
     }
