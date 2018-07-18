@@ -66,7 +66,7 @@
 
       //Put on top:
       // target.style.position = "relative";
-      target.style.position = 'relative';
+      // target.style.position = 'relative';
     }
 
     // this is used later in the resizing and gesture demos

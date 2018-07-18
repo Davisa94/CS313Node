@@ -27,7 +27,7 @@
 #drag-1{
   width: 238.11023622;
   height: 332.598425197;
-  min-height: 6.5em;
+  /* min-height: 6.5em; */
   margin: 10%;
   position: relative;
   z-index: 1;
@@ -45,7 +45,7 @@
 #drag-2 {
   width: 238.11023622;
   height: 332.598425197;
-  min-height: 6.5em;
+  /* min-height: 6.5em; */
   margin: 10%;
   position: relative;
   z-index: 1;
