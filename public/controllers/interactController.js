@@ -37,8 +37,10 @@
         if ($(e).css('position') != 'static')
           return parseInt($(e).css('z-index')) || 1;
       }));
+
         target.style.background = 'green';
         console.log(target.id);
+        console.log(document.getElementById(target.id).style.zIndex)
         target.style.zIndex = maxZ + 1;
         console.log(event.target.style.zIndex);
       // var top = 0;
