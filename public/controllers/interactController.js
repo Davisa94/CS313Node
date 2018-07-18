@@ -42,6 +42,11 @@
           // keep the dragged position in the data-x/data-y attributes
           x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
           y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+          
+          target.style.position = 'absolute';
+
+          target.parentNode.appendChild(target);
+
 
       // translate the element
       // var maxZ = Math.max.apply(null,
@@ -67,8 +72,7 @@
       // target.style.position = "relative";
       // target.style.position = 'relative';
 
-      target.parentNode.appendChild(target);
-      target.style.position = 'default';
+
     }
 
     // this is used later in the resizing and gesture demos
