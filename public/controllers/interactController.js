@@ -57,7 +57,7 @@
 
       target.style.webkitTransform =
       target.style.transform =
-        'translate(' + x + 'px, ' + y + 'py)';
+        'translate(' + x + 'px, ' + y + 'px)';
 
       // update the posiion attributes
       target.setAttribute('data-x', x);
@@ -66,6 +66,7 @@
       //Put on top:
       // target.style.position = "relative";
       target.style.position = 'relative';
+
       target.parentNode.appendChild(target);
       target.style.position = 'absolute';
     }
