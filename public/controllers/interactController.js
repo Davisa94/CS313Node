@@ -69,8 +69,9 @@
 
       //Put on top:
       // target.style.position = "relative";
-      // event.target.style.position = 'absolute';
-      event.target.parentNode.appendChild(target);
+
+      target.parentNode.appendChild(target);
+      target.style.position = 'absolute';
 
 
     }
