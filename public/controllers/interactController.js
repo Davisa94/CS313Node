@@ -55,6 +55,7 @@
       //   console.log(event.target.style.zIndex);
         target.style.position = 'absolute';
         target.parentNode.appendChild(target);
+        target.style.position = 'relative';
       target.style.webkitTransform =
       target.style.transform =
         'translate(' + x + 'px, ' + y + 'px)';
