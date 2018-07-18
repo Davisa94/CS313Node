@@ -47,6 +47,7 @@
   height: 332px;
   /* min-height: 6.5em; */
   margin: 10%;
+  position: relative;
   z-index: 1;
 
   background-color: #ee2323;
