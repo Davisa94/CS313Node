@@ -30,7 +30,14 @@
     });
 
     function dragMoveListener (event) {
-
+      var top = 0;
+      for(node in event.target.parentNode)
+      {
+          if(node.style.zIndex >= top){
+            top = node.style.zIndex;
+          }
+      }
+      top += 1;
       var target = event.target,
           // keep the dragged position in the data-x/data-y attributes
           x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
@@ -46,7 +53,7 @@
       target.setAttribute('data-y', y);
 
       //Put on top:
-      target.style.zIndex += "1";
+      target.style.zIndex = top;
 
     }
 
