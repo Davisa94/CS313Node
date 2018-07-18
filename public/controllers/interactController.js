@@ -32,6 +32,12 @@
     function dragMoveListener (event) {
       var amount = 1
       var target = event.target;
+      var parent = document.getElementsById(target.parentNode.id)
+      var children = parent.childNodes
+      console.log(children)
+      //TODO: Get parent
+      //TODO: Iterate to find highest child
+      //TODO: set current(target) style of zindex to highest plus one
       target.style.position = "relative";
       var maxZ = Math.max.apply(null,
       $.map($('body > *'), function(e,n) {
