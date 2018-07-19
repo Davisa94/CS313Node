@@ -32,8 +32,8 @@
     function dragMoveListener (event) {
       var amount = 1
       var target = event.target;
-      var parent = document.getElementById(target.parentNode.id)
-      var children = parent.childNodes
+      var children = document.getElementById(target.parentNode.id).childNodes
+      // var children = parent.childNodes
       console.log(children)
       //TODO: Get parent
       //TODO: Iterate to find highest child
