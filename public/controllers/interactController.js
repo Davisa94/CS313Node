@@ -32,7 +32,7 @@
     function dragMoveListener (event) {
       var amount = 1
       var target = event.target;
-      var children = document.getElementById(target.parentNode.id).childNodes
+      // /var children = document.getElementById(target.parentNode.id).childNodes
       // var children = parent.childNodes
       console.log(children)
       //TODO: Get parent
