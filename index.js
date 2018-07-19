@@ -10,7 +10,7 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
   .get('/test', (req, res) => res.render('pages/mainTable'))
-  .get('/findCard', findCard)
+  .get('/getCard', findCard)
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 function renderMain(ineract, res){
