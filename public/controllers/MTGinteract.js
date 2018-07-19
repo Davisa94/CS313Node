@@ -10,7 +10,7 @@ function callAjax(url, callback){
 
 
 function findCard(){
-  callAjax("getCard", callback)
+  callAjax("getCard", returnCard)
   mtg.card.find(3)
   .then(result => {
     console.log(result.card);
