@@ -20,7 +20,7 @@ function renderMain(ineract, res){
 
 function findCard(req, res)
 {
-  var result = mtg.card.find(3)(result, function(err, res){
+  var result = mtg.card.find(3)(result => function(err, res){
     if (err){
       console.log("error");
       res.status(500).json({success: false});
