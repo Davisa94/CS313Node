@@ -34,7 +34,7 @@
       var target = event.target;
       // /var children = document.getElementById(target.parentNode.id).childNodes
       // var children = parent.childNodes
-      console.log(children)
+      // console.log(children)
       //TODO: Get parent
       //TODO: Iterate to find highest child
       //TODO: set current(target) style of zindex to highest plus one
